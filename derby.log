@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Feb 28 22:32:32 EET 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0153-2995-1f51-0000038e27a0 
+on database directory memory:/Users/alicanmogol/projects/canmogol/design-patterns/testJava/testdb with class loader sun.misc.Launcher$AppClassLoader@14dad5dc 
+Loaded from file:/Users/alicanmogol/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_60-b27
+user.dir=/Users/alicanmogol/projects/canmogol/design-patterns
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.11.3
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
