@@ -42,5 +42,6 @@ bin/*
 .metadata/*
 .sonar
 .sonar/*
+derby.log
 src/main/resources/proto/*
 src/main/resources/xsd/*
