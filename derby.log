@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Sat Mar 26 15:04:59 EET 2016:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0153-b307-1740-0000031b00e8 
-on database directory memory:/Users/alicanmogol/projects/canmogol/design-patterns/testJava/testdb with class loader sun.misc.Launcher$AppClassLoader@29453f44 
+Sat Mar 26 22:40:48 EET 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0153-b4a8-65a2-000003880ed0 
+on database directory memory:/Users/alicanmogol/projects/canmogol/design-patterns/testJava/testdb with class loader sun.misc.Launcher$AppClassLoader@7852e922 
 Loaded from file:/Users/alicanmogol/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_60-b27

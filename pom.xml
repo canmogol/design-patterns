@@ -37,13 +37,22 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- PROVIDED -->
         <dependency>
             <groupId>org.apache.derby</groupId>
             <artifactId>derby</artifactId>
             <version>10.12.1.1</version>
+            <scope>provided</scope>
         </dependency>
 
-        <!-- PROVIDED -->
+        <!-- PACK WITH -->
+        <dependency>
+            <groupId>org.twitter4j</groupId>
+            <artifactId>twitter4j-core</artifactId>
+            <version>4.0.4</version>
+        </dependency>
+
 
     </dependencies>
 </project>
