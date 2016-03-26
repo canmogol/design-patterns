@@ -52,7 +52,6 @@ public class BridgeTester {
         squareInheritanceGreen.applyColor();
     }
 
-
     @Test
     public void bridgeCompositionTest() {
         // All shapes and colors can change and can be added independent from other side
