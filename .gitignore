@@ -43,5 +43,6 @@ bin/*
 .sonar
 .sonar/*
 derby.log
+output.txt
 src/main/resources/proto/*
 src/main/resources/xsd/*
