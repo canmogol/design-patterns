@@ -1,0 +1,23 @@
+ 2 (Factory returns cached object
+    or creates flyweight object)
++----------------------+                     +----------------+
+|   FlyweightFactory   |                     |   Flyweight    |
++----------------------+           message - +----------------+
+|                      |/\+-------------->| |+                |
+|   getFlyweight(key)  |\/agg              - |   operation()  |
+|                      |                     |                |
++----------+-----------+                     +-------+.+------+
+           ^                                         /_\
+    message| 1 (requests Flyweight object             +
+           |     from FlyweightFactory)               |
+           |                                          |
+    +------+-----+                         +----------+----------+
+    |            |                         |  ConcreteFlyweight  |
+    |   Client   |                 message +---------------------+
+    |            +------------------------>+                     |
+    +------------+4 (Client sends messages |     operation()     |
+                      to returned object)                        |
+                                           +---------------------+
+                                           3 (ConcreteFlyweight in the end
+                                              what is returned to the Client)
+
