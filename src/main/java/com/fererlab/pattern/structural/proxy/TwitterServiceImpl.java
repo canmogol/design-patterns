@@ -31,7 +31,7 @@ public class TwitterServiceImpl implements TwitterService {
                 result = twitter.search(query);
                 List<Status> tweets = result.getTweets();
                 for (Status tweet : tweets) {
-                    builder.append("@" + tweet.getUser().getScreenName() + " - " + tweet.getText());
+                    builder.append("@").append(tweet.getUser().getScreenName()).append(" - ").append(tweet.getText());
                     builder.append("\n");
                 }
             } while ((query = result.nextQuery()) != null);
