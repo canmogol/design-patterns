@@ -1,5 +1,8 @@
 package com.fererlab.pattern.behavioral.memento;
 
+/**
+ * Originator
+ */
 public class Employee {
 
     private String name;

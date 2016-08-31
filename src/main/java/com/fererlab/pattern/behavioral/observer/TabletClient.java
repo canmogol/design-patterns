@@ -1,5 +1,8 @@
 package com.fererlab.pattern.behavioral.observer;
 
+/**
+ * ConcreteObserver
+ */
 public class TabletClient extends Observer {
 
     public TabletClient(Subject subject) {

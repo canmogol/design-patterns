@@ -11,6 +11,9 @@ public class Light {
         return isOn;
     }
 
+    /**
+     * action
+     */
     public void toggle(){
         if(isOn){
             off();

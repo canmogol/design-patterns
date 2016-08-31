@@ -3,6 +3,9 @@ package com.fererlab.pattern.behavioral.observer;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+/**
+ * ConcreteSubject
+ */
 public class MessageStream extends Subject {
 
     private Deque<String> messageHistory = new ArrayDeque<>();

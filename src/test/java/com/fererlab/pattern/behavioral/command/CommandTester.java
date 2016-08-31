@@ -73,8 +73,11 @@ public class CommandTester {
         Command command = new ToggleCommand(light);
 
         // Invoker,
-        // may have a one or more Command types with aggregation
+        // may have one or more Command types with aggregation
         // and invoker will call execute() on command(s)
+        // it is not necessary Client to call/start the Invoker,
+        // Invoker might be called/invoked from somewhere else,
+        // their lifelines do not intersect, see uml.txt
         Switch lightSwitch = new Switch();
         lightSwitch.storeAndExecute(command);
         lightSwitch.storeAndExecute(command);

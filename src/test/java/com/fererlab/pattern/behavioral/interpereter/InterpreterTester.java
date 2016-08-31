@@ -37,10 +37,17 @@ public class InterpreterTester {
      */
     @Test
     public void testInterpreter() {
+        /**
+         * UML: Context
+         */
         String context = "John";
+
         Expression isMale = getMaleExpression();
         System.out.println("John is male? " + isMale.interpret(context));
 
+        /**
+         * UML: Context
+         */
         context = "Married Julie";
         Expression isMarriedWoman = getMarriedWomanExpression();
         System.out.println("Julie is a married women? " + isMarriedWoman.interpret(context));

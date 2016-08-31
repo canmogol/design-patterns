@@ -1,5 +1,8 @@
 package com.fererlab.pattern.behavioral.interpreter;
 
+/**
+ * UML: NonTerminalExpression
+ */
 public class OrExpression implements Expression{
 
     private Expression expression1;

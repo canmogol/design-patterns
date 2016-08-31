@@ -1,5 +1,8 @@
 package com.fererlab.pattern.behavioral.observer;
 
+/**
+ * ConcreteObserver
+ */
 public class PhoneClient extends Observer {
 
     public PhoneClient(Subject subject) {
