@@ -1,5 +1,65 @@
 # Real Life Examples
 
+## Creational Design Patterns
+
+
+### Singleton 
+
+The Singleton pattern ensures that a class has only one instance and 
+provides a global point of access to that instance. It is named after the 
+singleton set, which is defined to be a set containing one element. 
+
+The office of the President of the United States is a Singleton. The 
+United States Constitution specifies the means by which a president is 
+elected, limits the term of office, and defines the order of succession. As 
+a result, there can be at most one active president at any given time. 
+Regardless of the personal identity of the active president, the title, "The 
+President of the United States" is a global point of access that identifies 
+the person in the office. 
+
+
+### Builder 
+
+The Builder pattern separates the construction of a complex object 
+from its representation so that the same construction process can create 
+different representations. 
+
+This pattern is used by fast food restaurants to construct children's 
+meals. Children's meals typically consist of a main item, a side item, a 
+drink, and a toy (e.g., a hamburger, fries, Coke, and toy dinosaur). Note 
+that there can be variation in the content of the children's meal, but the 
+construction process is the same. 
+Whether a customer orders a hamburger, cheeseburger, or chicken, 
+the process is the same. The employee at the counter directs the crew to 
+assemble a main item, side item, and toy. These items are then placed in 
+a bag. The drink is placed in a cup and remains outside of the bag. This 
+same process is used at competing restaurants. 
+
+
+### Prototype  
+
+The Prototype pattern specifies the kind of objects to create using a 
+prototypical instance. Prototypes of new products are often built prior to 
+full production, but in this example, the prototype is passive and does 
+not participate in copying itself. 
+
+The mitotic division of a cell - resulting in two identical cells - is an 
+example of a prototype that plays an active role in copying itself and 
+thus, demonstrates the Prototype pattern. When a cell splits, two cells of 
+identical genotvpe result. In other words, the cell clones itself. 
+
+
+### Factory Method 
+
+The Factory Method defines an interface for creating objects, but lets 
+subclasses decide which classes to instantiate. 
+
+Injection molding presses demonstrate this pattern. Manufacturers of 
+plastic toys process plastic molding powder, and inject the plastic into 
+molds of the desired shapes. The class of toy (car, action figure, etc.) is 
+determined by the mold. 
+
+
 ### Abstract Factory 
 
 The purpose of the Abstract Factory is to provide an interface for 
@@ -12,6 +72,9 @@ is used to stamp right hand doors, left hand doors, right front fenders,
 left front fenders, hoods, etc. for different models of cars. Through the 
 use of rollers to change the stamping dies, the concrete classes produced 
 by the machinery can be changed within three minutes. 
+
+
+## Structural Design Patterns
 
 
 ### Adapter 
@@ -40,45 +103,6 @@ or off. The actual switch can be implemented as a pull chain, simple
 two position switch, or a variety of dimmer switches. 
 
 
-### Builder 
-
-The Builder pattern separates the construction of a complex object 
-from its representation so that the same construction process can create 
-different representations. 
-
-This pattern is used by fast food restaurants to construct children's 
-meals. Children's meals typically consist of a main item, a side item, a 
-drink, and a toy (e.g., a hamburger, fries, Coke, and toy dinosaur). Note 
-that there can be variation in the content of the children's meal, but the 
-construction process is the same. 
-Whether a customer orders a hamburger, cheeseburger, or chicken, 
-the process is the same. The employee at the counter directs the crew to 
-assemble a main item, side item, and toy. These items are then placed in 
-a bag. The drink is placed in a cup and remains outside of the bag. This 
-same process is used at competing restaurants. 
-
-
-### Chain of Responsibility 
-
-The Chain of Responsibility pattern avoids coupling the sender of a 
-request to the receiver by giving more than one object a chance to 
-handle the request. ATM use the Chain of Responsibility in money 
-giving mechanism. 
-
-
-### Command 
-
-The Command pattern allows requests to be encapsulated as objects, 
-thereby allowing clients to be parameterized with different requests. 
-
-The "check" at a diner is an example of a Command pattern. The 
-waiter or waitress takes an order or command from a customer and 
-encapsulates that order by writing it on the check. The order is then 
-queued for a short order cook. Note that the pad of "checks" used by 
-each waiter is not dependent on the menu, and therefore they can 
-support commands to cook many different items.  
-
-
 ### Composite 
 
 The Composite composes objects into tree structures and lets clients 
@@ -101,8 +125,8 @@ Decorators. Lights, garland, candy canes, glass ornaments, etc., can be
 added to a tree to give it a festive look. The ornaments do not change 
 the tree itself which is recognizable as a Christmas tree regardless of 
 particular ornaments used. As an example of additional functionality, 
-the addition of lights allows one to "light up" a Christmas tree.  
-
+the addition of lights allows one to "light up" a Christmas tree.
+    
 
 ### Facade 
 
@@ -114,17 +138,6 @@ consumer calls one number and speaks with a customer service
 representative. The customer service representative acts as a Facade, 
 providing an interface to the order fulfillment department, the billing 
 department, and the shipping department.  
-
-
-### Factory Method 
-
-The Factory Method defines an interface for creating objects, but lets 
-subclasses decide which classes to instantiate. 
-
-Injection molding presses demonstrate this pattern. Manufacturers of 
-plastic toys process plastic molding powder, and inject the plastic into 
-molds of the desired shapes. The class of toy (car, action figure, etc.) is 
-determined by the mold. 
 
 
 ### Flyweight 
@@ -139,6 +152,40 @@ subscribers. A subscriber is unaware of how many resources are in the
 pool when he or she lifts the handset to make a call. All that matters to 
 subscribers is that a dial tone is provided, digits are received, and the 
 call is completed.  
+    
+    
+### Proxy 
+
+The Proxy provides a surrogate or place holder to provide access to 
+an object. 
+
+A check or bank draft is a proxy for funds in an account. A check 
+can be used in place of cash for making purchases and ultimately 
+controls access to cash in the issuer's account.
+
+
+## Behavioral Design Patterns
+
+
+### Chain of Responsibility 
+
+The Chain of Responsibility pattern avoids coupling the sender of a 
+request to the receiver by giving more than one object a chance to 
+handle the request. ATM use the Chain of Responsibility in money 
+giving mechanism. 
+
+
+### Command 
+
+The Command pattern allows requests to be encapsulated as objects, 
+thereby allowing clients to be parameterized with different requests. 
+
+The "check" at a diner is an example of a Command pattern. The 
+waiter or waitress takes an order or command from a customer and 
+encapsulates that order by writing it on the check. The order is then 
+queued for a short order cook. Note that the pad of "checks" used by 
+each waiter is not dependent on the menu, and therefore they can 
+support commands to cook many different items.  
 
 
 ### Interpreter 
@@ -230,44 +277,6 @@ acceptance of the bid changes the bid price which is broadcast to all of
 the bidders in the form of a new bid.  
 
 
-### Prototype  
-
-The Prototype pattern specifies the kind of objects to create using a 
-prototypical instance. Prototypes of new products are often built prior to 
-full production, but in this example, the prototype is passive and does 
-not participate in copying itself. 
-
-The mitotic division of a cell - resulting in two identical cells - is an 
-example of a prototype that plays an active role in copying itself and 
-thus, demonstrates the Prototype pattern. When a cell splits, two cells of 
-identical genotvpe result. In other words, the cell clones itself. 
-
-
-### Proxy 
-
-The Proxy provides a surrogate or place holder to provide access to 
-an object. 
-
-A check or bank draft is a proxy for funds in an account. A check 
-can be used in place of cash for making purchases and ultimately 
-controls access to cash in the issuer's account.  
-
-
-# Singleton 
-
-The Singleton pattern ensures that a class has only one instance and 
-provides a global point of access to that instance. It is named after the 
-singleton set, which is defined to be a set containing one element. 
-
-The office of the President of the United States is a Singleton. The 
-United States Constitution specifies the means by which a president is 
-elected, limits the term of office, and defines the order of succession. As 
-a result, there can be at most one active president at any given time. 
-Regardless of the personal identity of the active president, the title, "The 
-President of the United States" is a global point of access that identifies 
-the person in the office. 
- 
-
 ### State 
 
 The State pattern allows an object to change its behavior when its 
@@ -315,31 +324,5 @@ When a person calls a taxi company (accepting a visitor), the company
 dispatches a cab to the customer. Upon entering the taxi the customer, 
 or Visitor, is no longer in control of his or her own transportation, the 
 taxi (driver) is.  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
